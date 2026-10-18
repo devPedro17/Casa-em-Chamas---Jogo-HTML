@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Herói das Chamas - Janela</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      a {
+        color: red; /* cor do texto*/
+        text-decoration: none; /*remove o risco sublinhado da opção*/
+        font-weight: bold; /*texto em negrito*/
+        cursor: pointer; /* dedo para clicar no link */
+        font-size: 18px; /* tamanho da fonte */
+        text-align: left;
+        margin: 5px;
+      }
+      a:hover {
+        color: #ff3300; /*muda pra um vermelho alaranjado */
+      }
+      img {
+        width: 700px;
+        max-width: 90%;
+        border: 4px solid #d4af37; /* moldura dourada nas boras*/
+        outline: 2px solid #ff4500; /* linha externa da borda*/
+        outline-offset: 6px; /* afasta a linha externa*/
+        padding: 9px;
+        border-radius: 4px;
+        background: #1a0000;
+        box-shadow: /*sombra e brilho levemente alaranjado*/
+          0 0 15px rgba(255, 69, 0, 0.6),
+          0 0 30px rgba(255, 0, 0, 0.4),
+          0 15px 25px rgba(0, 0, 0, 0.9);
+        transition: all 0.4s ease;
+      }
+      img:hover {
+        transform: scale(1.02);
+        outline-color: #ff8c00;
+        box-shadow:
+          0 0 25px rgba(255, 140, 0, 0.9),
+          0 0 50px rgba(255, 69, 0, 0.6),
+          0 20px 30px rgba(0, 0, 0, 1);
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* espaçamento entre os botões*/
+      }
+      li {
+        width: 100%;
+        max-width: 320px;
+      }
+      .btn-game {
+        display: block;
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffdd88;
+        text-decoration: none;
+        box-sizing: border-box;
+        background: linear-gradient(180deg, #3a0d0d 0%, #1a0000 100%);
+        border: 2px solid #d4af37;
+        border-radius: 6px;
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.2),
+          /* Brilho interno no topo */ 0 4px 10px rgba(0, 0, 0, 0.7);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+      }
+      .btn-game:hover {
+        color: #ffffff;
+        background: linear-gradient(180deg, #8b0000 0%, #3a0d0d 100%);
+        border-color: #ff6600;
+        box-shadow:
+          0 0 15px rgba(255, 102, 0, 0.8),
+          /* Brilho alaranjado */ 0 6px 15px rgba(0, 0, 0, 0.9);
+        transform: translateY(-2px);
+      }
+      .btn-game:active {
+        transform: translateY(2px); /* Efeito de afundamento ao clicar */
+        box-shadow:
+          inset 0 2px 5px rgba(0, 0, 0, 0.8),
+          0 2px 5px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scene-container">
+      <h1 class="scene-title">🪟 INVASÃO PELA JANELA</h1>
+
+      <div class="story-box">
+        <p class="story-text">
+          Você escala o parapeito e passa pela janela sob calor intenso. A
+          fumaça encobre quase tudo.
+          <strong>Avance com cuidado para entrar no quarto!</strong>
+        </p>
+      </div>
+
+      <div class="media-container">
+        <img
+          src="Gemini_Generated_Image_2bmfq92bmfq92bmf.jpg"
+          alt="Janela em chamas"
+          class="scene-image"
+        />
+      </div>
+
+      <div class="action-menu">
+        <ul class="choice-list">
+          <li>
+            <a href="quarto1.html" class="btn-game">🚪 Entrar no Quarto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
